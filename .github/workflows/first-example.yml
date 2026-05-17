@@ -9,7 +9,7 @@ jobs:
         - name: Welcome to my first workflow 
           run: echo "Hello World"
         - name: Lists files in the current directory
-          run: ls -la
+          run: ls 
         - name: read the readme file
           run: cat readme.md
    
