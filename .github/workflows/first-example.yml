@@ -11,5 +11,5 @@ jobs:
         - name: Lists files in the current directory
           run: ls 
         - name: read the readme file
-          run: cat readme.md
+          run: cat README.md
    
