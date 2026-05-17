@@ -3,13 +3,14 @@ name: my First workflow
 on: [push]
 
 jobs:
-  fisrst-workflow:
+  first-workflow:
     runs-on: ubuntu-latest
     steps:
-        - name: Welcome to my first workflow 
-          run: echo "Hello World"
-        - name: Lists files in the current directory
-          run: ls 
-        - name: read the readme file
-          run: cat README.md
-   
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Welcome to my first workflow 
+        run: echo "Hello World"
+      - name: Lists files in the current directory
+        run: ls 
+      - name: read the readme file
+        run: cat README.md
